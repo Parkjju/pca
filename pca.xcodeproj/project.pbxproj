@@ -13,6 +13,12 @@
 		8827A7CC2A27788300702140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8827A7CA2A27788300702140 /* Main.storyboard */; };
 		8827A7CE2A27788700702140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8827A7CD2A27788700702140 /* Assets.xcassets */; };
 		8827A7D12A27788700702140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8827A7CF2A27788700702140 /* LaunchScreen.storyboard */; };
+		8827A7DB2A27816500702140 /* MobileNetV2.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 8827A7DA2A27816500702140 /* MobileNetV2.mlpackage */; };
+		88566E392A303CF3000833A1 /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88566E382A303CF3000833A1 /* matrix.swift */; };
+		88566E3B2A303D29000833A1 /* vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88566E3A2A303D29000833A1 /* vector.swift */; };
+		88566E3D2A303D82000833A1 /* pca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88566E3C2A303D82000833A1 /* pca.swift */; };
+		88566E402A303D9B000833A1 /* iris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88566E3F2A303D9B000833A1 /* iris.swift */; };
+		88566E422A303FBA000833A1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88566E412A303FBA000833A1 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		8827A7CD2A27788700702140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8827A7D02A27788700702140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8827A7D22A27788700702140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8827A7DA2A27816500702140 /* MobileNetV2.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = MobileNetV2.mlpackage; sourceTree = "<group>"; };
+		88566E382A303CF3000833A1 /* matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matrix.swift; sourceTree = "<group>"; };
+		88566E3A2A303D29000833A1 /* vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vector.swift; sourceTree = "<group>"; };
+		88566E3C2A303D82000833A1 /* pca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pca.swift; sourceTree = "<group>"; };
+		88566E3F2A303D9B000833A1 /* iris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iris.swift; sourceTree = "<group>"; };
+		88566E412A303FBA000833A1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		8827A7C32A27788300702140 /* pca */ = {
 			isa = PBXGroup;
 			children = (
+				88566E3E2A303D94000833A1 /* data */,
+				88566E372A303CE5000833A1 /* Algorithms */,
+				8827A7DA2A27816500702140 /* MobileNetV2.mlpackage */,
 				8827A7C42A27788300702140 /* AppDelegate.swift */,
 				8827A7C62A27788300702140 /* SceneDelegate.swift */,
 				8827A7C82A27788300702140 /* ViewController.swift */,
@@ -65,6 +80,25 @@
 				8827A7D22A27788700702140 /* Info.plist */,
 			);
 			path = pca;
+			sourceTree = "<group>";
+		};
+		88566E372A303CE5000833A1 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				88566E382A303CF3000833A1 /* matrix.swift */,
+				88566E3A2A303D29000833A1 /* vector.swift */,
+				88566E3C2A303D82000833A1 /* pca.swift */,
+				88566E412A303FBA000833A1 /* UIImage.swift */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		88566E3E2A303D94000833A1 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				88566E3F2A303D9B000833A1 /* iris.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +174,13 @@
 			files = (
 				8827A7C92A27788300702140 /* ViewController.swift in Sources */,
 				8827A7C52A27788300702140 /* AppDelegate.swift in Sources */,
+				88566E3B2A303D29000833A1 /* vector.swift in Sources */,
+				88566E392A303CF3000833A1 /* matrix.swift in Sources */,
+				8827A7DB2A27816500702140 /* MobileNetV2.mlpackage in Sources */,
 				8827A7C72A27788300702140 /* SceneDelegate.swift in Sources */,
+				88566E422A303FBA000833A1 /* UIImage.swift in Sources */,
+				88566E3D2A303D82000833A1 /* pca.swift in Sources */,
+				88566E402A303D9B000833A1 /* iris.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

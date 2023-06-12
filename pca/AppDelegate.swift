@@ -14,6 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+//        let pca = PCA.sharedInstance
+//        pca.dimensionReduction(iris, dimension: 2) { (success, output, reduceMat, u, s, v) in
+//            print("------pca--------")
+//            print(output)
+//        }
+        
         return true
     }
 
